@@ -1,7 +1,9 @@
 ### 米淘赚赚SDK集成说明
 
 1.确保马甲包工程能正常运行
+
 2.将```lib```文件夹拖入工程
+
 3.设置：
 
 * 在```Target -> Build Setting -> Other Linker Flags```中新增```-ObjC```
