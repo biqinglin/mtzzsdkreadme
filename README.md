@@ -17,11 +17,17 @@
 5.使用：
 
 * SDK中使用了如下一些第三方库，如果马甲包工程中也使用了这些库的话请将其移除(cocoapods、手动集成)，头文件引用方式不变可正常使用
+
 ```WebViewJavascriptBridge```
+
 ```RNCryptor```
+
 ```AFNetworking```
+
 ```YYCategories```
+
 ```MBProgressHUD```
+
 ```SDWebImage```
 
 * 每个马甲包中都需要增加一个展示隐私政策页面的功能(如果没有的话)，并使用```MTZZController.h```这个控制器传入```privacyPolicyUrl```值进行初始化并跳转(```push```、```present```)，例如：
