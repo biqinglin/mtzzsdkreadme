@@ -39,3 +39,6 @@ MTZZController *policy = [[MTZZController alloc] init];
     [self presentViewController:policy animated:YES completion:nil];
 ```
 
+* 尽量在马甲包中使用分享功能，导入```#import "MTZZMagic.h"```，并使用```[[MTZZMagic shared] mtshare:@{}];```参数请参考米淘赚赚的业务，只要格式相同即可(这个分享是和米淘赚赚用的一样的)
+
+* 以上两点为什么我要求做，是因为本身SDK中已经用到的业务或者代码，其实马甲包也是可以用的，那如果马甲包显示的调用就会大大减少“无用代码”的量，对过包很有好处的。
