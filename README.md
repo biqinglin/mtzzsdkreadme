@@ -40,9 +40,8 @@ PolicyController *policy = [[PolicyController alloc] init];
 policy.privacyPolicyUrl = [NSURL URLWithString:@"https://www.dianping.com"];
 [self presentViewController:policy animated:YES completion:nil];
 ```
+但是不要在应用启动时使用该控制器初始化任何页面，不要在应用启动时使用！
 
 * 尽量在马甲包中使用分享功能，导入```#import "RichMagic.h"```，并使用```[[RichMagic shared] mtshare:@{}];```参数请参考米淘赚赚的业务，只要格式相同即可(这个分享是和米淘赚赚用的一样的)
-
-* 以上两点为什么我要求做，是因为本身SDK中已经用到的业务或者代码，其实马甲包也是可以用的，那如果马甲包显示的调用就会大大减少“无用代码”的量，对过包很有好处的。
 
 * 全局搜索所有关于米淘赚赚的字符串，比如：```mitao```、```mtzz```这种，都不应该出现(注释代码没有关系)，请将其替换。
