@@ -1,4 +1,4 @@
-### 米淘赚赚SDK集成说明
+### mtzz SDK集成说明
 
 1.集成之前告诉我该包的bundle id、微信、QQ、微博、极光key值，并确保马甲包工程能正常运行。
 
@@ -42,6 +42,6 @@ policy.privacyPolicyUrl = [NSURL URLWithString:@"https://www.dianping.com"];
 ```
 但是不要在应用启动时使用该控制器初始化任何页面，不要在应用启动时使用！
 
-* 尽量在马甲包中使用分享功能，导入```#import "RichMagic.h"```，并使用```[[RichMagic shared] mtshare:@{}];```参数请参考米淘赚赚的业务，只要格式相同即可(这个分享是和米淘赚赚用的一样的)。
+* 尽量在马甲包中使用分享功能，导入```#import "RichMagic.h"```，并使用```[[RichMagic shared] mtshare:@{}];```
 
-* 全局搜索所有关于米淘赚赚的字符串，比如：```mitao```、```mtzz```这种，都不应该出现(注释代码没有关系)，请将其替换。
+* 全局搜索所有关于：```mitao```、```mtzz```这种，都不应该出现(注释代码没有关系)，请将其替换。
